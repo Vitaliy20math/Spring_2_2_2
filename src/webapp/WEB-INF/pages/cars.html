@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Model</th>
+        <th>Type</th>
+        <th>Series</th>
+    </tr>
+    <tr th:each="tbl : ${table}">
+        <td th:utext="${tbl.getModel()}"></td>
+        <td th:utext="${tbl.getType()}"></td>
+        <td th:utext="${tbl.getSeries()}"></td>
+    </tr>
+    </thead>
+
+
+</table>
+</body>
+</html>
