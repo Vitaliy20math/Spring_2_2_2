@@ -17,9 +17,9 @@ import java.util.List;
 @Controller
 public class CarController {
 
-    private CarServiceImpl carService;
+    private CarService carService;
     @Autowired
-    public CarController(CarServiceImpl carService) {
+    public CarController(CarService carService) {
         this.carService = carService;
     }
     @GetMapping(value = "/cars")
